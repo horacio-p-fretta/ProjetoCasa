@@ -1,0 +1,139 @@
+.header {
+    overflow: hidden;
+    background-color: #90ee90;
+    padding: 10px 10px;
+  }
+  
+  /* estilo do  menu do cabeçalho */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+  
+  /* estilo do logo, tamanho, fonts entre outras coisas */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    align-content: center;
+    padding-bottom: 10px;
+  }
+  
+  /**  estilo do logo, tamanho da fonte e imagem  */
+  #container {
+    max-width:100px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+  }
+  
+  
+  /* muda a cor quando passa o mouse */
+  .header a:hover {
+    background-color: #16e137;
+    color: black;
+  }
+  
+  /* cor do botao verde HOME */
+  .header a.active {
+    background-color: rgb(0, 199, 33);
+    color: white;
+  }
+  
+  /* alinha a direita os itens do menu*/
+  .header-right {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  /* trava os itens do menu a direita */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+/**  cor do fundo e fonte  */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/**  quadrado ao redor do formulario  */
+.card {
+  box-shadow: 1px, 1px, 5px #ccc;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+
+/**  formulario de login   */
+.form-login {
+  padding-top: 60px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+/** topo do formulario */
+.card-top{
+  text-align: center;
+
+}
+/**  tamanho e sombra da imagem do formulario usuario  */
+.img-login {
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px, 1px, 5px #ccc;
+}
+
+.titulo-form{
+  color: rgb(0, 199, 33);
+}
+
+.card-group{
+  margin-bottom: 5px;
+}
+
+.card-group > label {
+  margin-left: 71px;
+  width: 100%;
+  color: rgb(4, 4, 4);
+}
+
+.card-group > input {
+  height: 20px;
+  display: block;
+  border-radius: 5px;
+  width: 200px;
+  outline: 0;
+  margin-left: 70px;
+}
+
+.card-group > button{
+  border-radius: 30px;
+  background-image:linear-gradient(to right, #16e137, #1e752c);
+  width: 100%;
+  padding: 15px;
+  color: white;
+  outline: 0;
+  border: 0px;
+}
+
+.card-group > a{
+  text-align: center;
+  color: blue;
+  font-size: 12px;
+}
